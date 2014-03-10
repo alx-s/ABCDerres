@@ -49,6 +49,8 @@ Après :
 	sudo apt-get update
 	sudo apt-get install pd-extended
 	
+Il se peut qu'un message d'erreur ```W: GPG error``` apparaisse après le ```sudo update``` cela n'est pas un problème.
+	
 ## Obtenir ce git
 
 	cd ~
