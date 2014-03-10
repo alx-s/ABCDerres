@@ -14,6 +14,20 @@ codes for ensad's ABCDerres project
 | ------------ | ----------------------- |
 | pi		| raspberry	     |
 
+## Basculer le clavier en azerty
+
+	sudo nano /etc/default/keyboard
+	
+changer la ligne :
+	
+	XKBLAYOUT="gb"
+	
+en :
+
+	XKBLAYOUT="fr"
+	
+Le changement sera pris en compte après le redémarrage de la rapsberry.
+
 ## Connection ssh avec  interface graphique 
 
 Ajouter l'option ```-X``` après ssh.
