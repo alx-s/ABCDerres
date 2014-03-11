@@ -1,5 +1,5 @@
 #N canvas 628 193 450 300 10;
-#X obj 34 35 loadbang;
+#X obj 34 35 //loadbang;
 #X obj 34 57 delay 100;
 #X msg 34 129 \; pd dsp 1 \;;
 #X obj 215 139 readsf~ 2;
