@@ -93,19 +93,19 @@ try:
             input7 = readadc(adc7, SPICLK, SPIMOSI, SPIMISO, SPICS)
 
             try:
-                client.send(OSC.OSCMessage("input0", input0))
-                client.send(OSC.OSCMessage("input1", input1))
-                client.send(OSC.OSCMessage("input2", input2))
-                client.send(OSC.OSCMessage("input3", input3))
-                client.send(OSC.OSCMessage("input4", input4))
-                client.send(OSC.OSCMessage("input5", input5))
-                client.send(OSC.OSCMessage("input6", input6))
-                client.send(OSC.OSCMessage("input7", input7))
+                client.send(OSC.OSCMessage("/input0", input0))
+                client.send(OSC.OSCMessage("/input1", input1))
+                client.send(OSC.OSCMessage("/input2", input2))
+                client.send(OSC.OSCMessage("/input3", input3))
+                client.send(OSC.OSCMessage("/input4", input4))
+                client.send(OSC.OSCMessage("/input5", input5))
+                client.send(OSC.OSCMessage("/input6", input6))
+                client.send(OSC.OSCMessage("/input7", input7))
             except :
                 print "not connected"
                 pass
-
-
+	
+	    time.sleep(.05)	    
 
         
 except KeyboardInterrupt:
